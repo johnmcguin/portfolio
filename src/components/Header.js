@@ -8,7 +8,7 @@ class Header extends React.Component {
         return (
             <header id="header">
                 <div className="inner">
-                    <a href="#" className="image avatar"><img src={avatar} alt="" /></a>
+                    <div className="profile" style={{backgroundImage: "url(" + avatar + ")"}}></div>
                     <h1>Hello, I am John McGuin</h1>
                     <p>Web developer based in Denver, Colorado</p>
                 </div>
