@@ -11,8 +11,8 @@ class Gallery extends Component {
         const gallery = images.map((obj, i) => {
             return (
                 <article className="work-item" key={i}>
-                    <a className="image fit thumb" href={obj.href} target="_blank">
-                        <div className="item-image" style={{ backgroundImage: "url(" + obj.img + ")" }}></div>
+                    <a className="image fit thumb" href={obj.href} data-after-content={obj.afterContent} target="_blank">
+                        <img src={obj.img} />
                     </a>
                     <h3>{obj.caption}</h3>
                     <p>{obj.description}</p>

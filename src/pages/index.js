@@ -21,7 +21,8 @@ class HomeIndex extends React.Component {
                     <section id="two">
                         <h2>Projects</h2>
 
-                        <Gallery images={PROJECTS.map(({ id, src, thumbnail, caption, description, img, href, technologies, roles }) => ({
+                        <Gallery images={PROJECTS.map(({ id, src, thumbnail, caption, description, img, href, technologies, roles,
+                        afterContent }) => ({
                             src,
                             thumbnail,
                             caption,
@@ -29,7 +30,8 @@ class HomeIndex extends React.Component {
                             img,
                             href,
                             roles,
-                            technologies
+                            technologies,
+                            afterContent
                         }))} />
                     </section>
 
