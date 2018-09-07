@@ -37,6 +37,7 @@ const PROJECTS = [
         href: 'https://www.opsociety.org/',
         technologies: [jquery, less, node, express, stripe],
         roles: ['developer'],
+        credits: ['created at Human Design'],
         afterContent: 'VIEW'
     },
     { 
@@ -49,6 +50,7 @@ const PROJECTS = [
         href: 'https://common.is/',
         technologies: [jquery, less],
         roles: ['developer'],
+        credits: ['created at Human Design'],
         afterContent: 'VIEW'
     },
     { 
@@ -61,6 +63,7 @@ const PROJECTS = [
         href: 'https://www.enli.net/',
         technologies: [mithril, jquery, less],
         roles: ['lead developer'],
+        credits: ['created at Human Design'],
         afterContent: 'VIEW'
     },
     { 
@@ -73,6 +76,7 @@ const PROJECTS = [
         href: 'https://www.cameragoat.com/',
         technologies: [jquery, less],
         roles: ['developer'],
+        credits: ['created at Human Design'],
         afterContent: 'VIEW'
     },
     { 
@@ -85,6 +89,7 @@ const PROJECTS = [
         href: 'https://blog.skratchlabs.com/',
         technologies: [jquery, less],
         roles: ['developer'],
+        credits: ['created at Human Design'],
         afterContent: 'VIEW'
     },
     { 
@@ -96,6 +101,7 @@ const PROJECTS = [
         img: 'https://res.cloudinary.com/dsne543uh/image/upload/v1536274704/kelvyn-ornettte-sol-marte-321650-unsplash_ziza3k.jpg',
         technologies: [angular, less, mongodb, express, node, lodash],
         roles: ['developer', 'vertical lead developer'],
+        credits: ['created at HDS'],
         afterContent: 'VIEW ON REQUEST'
     },
     { 
@@ -107,6 +113,7 @@ const PROJECTS = [
         img: 'https://res.cloudinary.com/dsne543uh/image/upload/v1536274344/WorkOrders_FinalSplash_jhi67g.png',
         technologies: [angular, ionic, sass, typeScript, ngrx],
         roles: ['developer', 'API developer', 'project management'],
+        credits: ['created at HDS'],
         href: 'https://itunes.apple.com/us/app/hds-work-orders/id1383360604?mt=8',
         afterContent: 'VIEW'
     }

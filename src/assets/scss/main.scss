@@ -917,11 +917,11 @@
 		@include vendor('justify-content', 'space-between');
 		background-color:		_palette(accent2, bg);
 		background-attachment:	scroll,								fixed;
-		background-image:	url('https://res.cloudinary.com/dsne543uh/image/upload/v1536275177/clement-m-429812-unsplash_rzechj.jpg');
-		background-position: center center;
-    background-repeat: no-repeat;
+		background-image:	url('https://res.cloudinary.com/dsne543uh/image/upload/v1536275177/clement-m-429812-unsplash_rzechj.jpg'), url('./images/overlay.png');
+		background-position: top left, top left;
+    background-repeat: no-repeat, repeat;
+		background-size: cover, auto;
     box-shadow: 0 0 1px _palette(fg-bold);
-		background-size: cover;
 		color: _palette(accent2, fg);
 		height: 100%;
 		left: 0;

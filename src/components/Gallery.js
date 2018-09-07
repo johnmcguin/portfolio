@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
 class Gallery extends Component {
-
     renderGallery() {
         const { images } = this.props;
 
@@ -16,6 +15,9 @@ class Gallery extends Component {
                     </a>
                     <h3>{obj.caption}</h3>
                     <p>{obj.description}</p>
+                    <p>Technologies: {obj.technologies.join(', ')}</p>
+                    <p>Roles: {obj.roles.join(', ')}</p>
+                    <p>Credits: {obj.credits.join(', ')}</p>
                 </article>
             );
         });

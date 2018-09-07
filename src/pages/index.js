@@ -21,8 +21,19 @@ class HomeIndex extends React.Component {
                     <section id="two">
                         <h2>Projects</h2>
 
-                        <Gallery images={PROJECTS.map(({ id, src, thumbnail, caption, description, img, href, technologies, roles,
-                        afterContent }) => ({
+                        <Gallery images={PROJECTS.map(({ 
+                            id, 
+                            src, 
+                            thumbnail, 
+                            caption, 
+                            description, 
+                            img, 
+                            href, 
+                            roles,
+                            credits,
+                            technologies, 
+                            afterContent 
+                        }) => ({
                             src,
                             thumbnail,
                             caption,
@@ -30,6 +41,7 @@ class HomeIndex extends React.Component {
                             img,
                             href,
                             roles,
+                            credits,
                             technologies,
                             afterContent
                         }))} />
@@ -40,7 +52,7 @@ class HomeIndex extends React.Component {
                         <p>If you like what you've seen so far, let's start a conversation and see where it goes!</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
-                                <form method="post" action="#">
+                                <form method="post" name="contact" data-netlify="true" action="/">
                                     <div className="row uniform 50%">
                                         <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
                                         <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
