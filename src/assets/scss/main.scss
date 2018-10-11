@@ -1291,15 +1291,18 @@
 
 			#header {
 				background-attachment:	scroll;
-				background-position:	top left,	center center;
-				background-size:		auto,		cover;
+        background-position: center;
 				left: auto;
 				padding: ($size-header-pad * 1.5) $size-header-pad;
 				position: relative;
 				text-align: center;
 				top: auto;
 				width: 100%;
-				display: block;
+        display: block;
+        
+        .profile {
+          margin: auto;
+        }
 
 				h1 {
 					font-size: 1.75em;
@@ -1307,7 +1310,7 @@
 					br {
 						display: inline;
 					}
-				}
+        }
 			}
 
 		/* Footer */
