@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "John McGuin - Portfolio",
+    title: "John McGuin - Web Developer",
     author: "John McGuin",
     description: "A web development portfolio based on Strata by HTML5 UP"
   },
