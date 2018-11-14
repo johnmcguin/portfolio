@@ -22,9 +22,6 @@ class HomeIndex extends React.Component {
                         <h2>Projects</h2>
 
                         <Gallery images={PROJECTS.map(({ 
-                            id, 
-                            src, 
-                            thumbnail, 
                             caption, 
                             description, 
                             img, 
@@ -34,8 +31,6 @@ class HomeIndex extends React.Component {
                             technologies, 
                             afterContent 
                         }) => ({
-                            src,
-                            thumbnail,
                             caption,
                             description,
                             img,
