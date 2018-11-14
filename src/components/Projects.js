@@ -31,8 +31,9 @@ class Projects extends Component {
     render() {
         return (
             <div>
-                {this.renderProjects()}
-            </div>
+                <h2>Projects</h2>
+                { this.renderProjects() }
+            </div> 
         );
     }
 }
