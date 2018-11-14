@@ -23,25 +23,7 @@ class HomeIndex extends React.Component {
                 <div id="main">
                     {/* Projects */}
                     <section>
-                        <Projects projects={PROJECTS.map(({
-                            caption,
-                            description,
-                            img,
-                            href,
-                            roles,
-                            credits,
-                            technologies,
-                            afterContent
-                        }) => ({
-                            caption,
-                            description,
-                            img,
-                            href,
-                            roles,
-                            credits,
-                            technologies,
-                            afterContent
-                        }))} />
+                        <Projects projects={PROJECTS}></Projects>
                     </section>
                     {/* Services */}
                     <section>
