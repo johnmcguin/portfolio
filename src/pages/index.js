@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-import Gallery from '../components/Gallery'
+import Projects from '../components/Projects'
 import PROJECTS from '../models/projects'
 class HomeIndex extends React.Component {
 
@@ -21,7 +21,7 @@ class HomeIndex extends React.Component {
                     <section id="two">
                         <h2>Projects</h2>
 
-                        <Gallery images={PROJECTS.map(({ 
+                        <Projects images={PROJECTS.map(({ 
                             caption, 
                             description, 
                             img, 

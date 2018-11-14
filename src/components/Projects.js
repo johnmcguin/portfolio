@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
-class Gallery extends Component {
-    renderGallery() {
+class Projects extends Component {
+    renderProjects() {
         const { images } = this.props;
 
         if (!images) return;
 
-        const gallery = images.map((obj, i) => {
+        const Projects = images.map((obj, i) => {
             return (
                 <article className="work-item" key={i}>
                     <a className="image fit thumb" href={obj.href} data-after-content={obj.afterContent} target="_blank">
@@ -24,22 +24,22 @@ class Gallery extends Component {
 
         return (
             <div className="work-list">
-                {gallery}
+                {Projects}
             </div>
         );
     }
     render() {
         return (
             <div>
-                {this.renderGallery()}
+                {this.renderProjects()}
             </div>
         );
     }
 }
 
-Gallery.displayName = 'Gallery';
-Gallery.propTypes = {
+Projects.displayName = 'Projects';
+Projects.propTypes = {
     images: PropTypes.array
 };
 
-export default Gallery;
+export default Projects;
