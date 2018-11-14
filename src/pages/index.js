@@ -1,10 +1,12 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 // model
-import PROJECTS from '../models/projects'
+import PROJECTS from '../models/projects.model'
+import SERVICES from '../models/services.model'
 // components
 import Projects from '../components/Projects'
 import ContactForm from '../components/Contact'
+import Services from '../components/Services'
 class HomeIndex extends React.Component {
 
     render() {
@@ -21,7 +23,7 @@ class HomeIndex extends React.Component {
                 <div id="main">
                     {/* Projects */}
                     <section>
-                        <Projects images={PROJECTS.map(({
+                        <Projects projects={PROJECTS.map(({
                             caption,
                             description,
                             img,
@@ -40,6 +42,10 @@ class HomeIndex extends React.Component {
                             technologies,
                             afterContent
                         }))} />
+                    </section>
+                    {/* Services */}
+                    <section>
+                        <Services services={SERVICES}></Services>
                     </section>
                     {/* Contact */}
                     <section>

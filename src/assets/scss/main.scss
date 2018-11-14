@@ -896,11 +896,6 @@
       background-repeat: no-repeat;
     }
 
-		h3 {
-			font-size: 1em;
-			margin: 0 0 (_size(element-margin) * 0.25) 0;
-		}
-
 		p {
 			font-size: 0.8em;
 			line-height: 1.5em;
@@ -1018,14 +1013,20 @@
 		> section {
 			border-top: solid 2px _palette(border);
 			margin: $size-header-pad 0 0 0;
-			padding: $size-header-pad 0 0 0;
+      padding: $size-header-pad 0 0 0;
+      
 
 			&:first-child {
 				border-top: 0;
 				margin-top: 0;
 				padding-top: 0;
 			}
-		}
+    }
+    
+    & h3 {
+      font-size: 1em;
+      margin: 0 0 (_size(element-margin) * 0.25) 0;
+    }
 	}
 
 /* Poptrox */

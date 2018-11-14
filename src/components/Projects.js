@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 
 class Projects extends Component {
     renderProjects() {
-        const { images } = this.props;
+        const { projects } = this.props;
 
-        if (!images) return;
+        if (!projects) return;
 
-        const Projects = images.map((obj, i) => {
+        const Projects = projects.map((obj, i) => {
             return (
                 <article className="work-item" key={i}>
                     <a className="image fit thumb" href={obj.href} data-after-content={obj.afterContent} target="_blank">
@@ -40,7 +40,7 @@ class Projects extends Component {
 
 Projects.displayName = 'Projects';
 Projects.propTypes = {
-    images: PropTypes.array
+    projects: PropTypes.array
 };
 
 export default Projects;
