@@ -1,8 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 // model
-import PROJECTS from '../models/projects.model'
-import SERVICES from '../models/services.model'
+import { PROJECTS, SERVICES } from '../models'
 // components
 import Projects from '../components/Projects'
 import ContactForm from '../components/Contact'
