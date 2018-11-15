@@ -4,9 +4,9 @@ class ContactForm extends React.Component {
     render() {
         return (
             <div>
-                <h2 key="a">Let's Chat</h2>
-                <p key="b">If you like what you've seen so far, let's start a conversation and see where it goes!</p>
-                <div key="c" className="row">
+                <h2>Let's Chat</h2>
+                <p>If you like what you've seen so far, let's start a conversation and see where it goes!</p>
+                <div className="row">
                     <div className="8u 12u$(small)">
                         <form method="post" name="contact" data-netlify="true" id="contactForm">
                             <div className="row uniform 50%">
