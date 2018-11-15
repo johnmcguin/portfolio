@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
-import Service from './Service'
+import { Service } from './'
 
 class Services extends Component {
     render() {

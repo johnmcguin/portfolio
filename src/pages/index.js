@@ -3,9 +3,7 @@ import Helmet from 'react-helmet'
 // model
 import { PROJECTS, SERVICES } from '../models'
 // components
-import Projects from '../components/Projects'
-import ContactForm from '../components/Contact'
-import Services from '../components/Services'
+import { Projects, ContactForm, Services } from '../components'
 class HomeIndex extends React.Component {
 
     render() {
