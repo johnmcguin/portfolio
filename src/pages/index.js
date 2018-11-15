@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 // model
 import { PROJECTS, SERVICES } from '../models'
 // components
-import { Projects, ContactForm, Services } from '../components'
+import { Projects, ContactForm, Services, About } from '../components'
 class HomeIndex extends React.Component {
 
     render() {
@@ -18,6 +18,10 @@ class HomeIndex extends React.Component {
                 </Helmet>
 
                 <div id="main">
+                    {/* About */}
+                    <section>
+                        <About></About>
+                    </section>
                     {/* Projects */}
                     <section>
                         <Projects projects={PROJECTS}></Projects>
