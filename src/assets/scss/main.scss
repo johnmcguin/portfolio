@@ -263,7 +263,7 @@
 		@include vendor('appearance', 'none');
 		background: _palette(border-bg);
 		border-radius: _size(border-radius);
-		border: solid 2px transparent;
+		border: solid 2px _palette(border2-bg);
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -567,7 +567,7 @@
 
 	ul {
 		list-style-type: none;
-		margin: 0 0 _size(element-margin) 0;
+    margin: 0 0 _size(element-margin) 0;
 
 		&.icons {
 			cursor: default;
@@ -660,7 +660,7 @@
 						padding: 0 0 0 (_size(element-margin) * 0.25);
 					}
 				}
-			}
+      }
 		}
 
 		&.labeled-icons {
@@ -690,7 +690,11 @@
 					width: 1em;
 				}
 			}
-		}
+    }
+    
+    &.is-light {
+      color: _palette(fg);
+    }
 	}
 
 	dl {
@@ -783,7 +787,7 @@
 		@include vendor('transition', ('background-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out', 'border-color #{_duration(transition)} ease-in-out'));
 		background-color: transparent;
 		border-radius: _size(border-radius);
-		border: solid 3px _palette(border);
+		border: solid 2px _palette(border2-bg);
 		color: _palette(fg-bold) !important;
 		cursor: pointer;
 		display: inline-block;
@@ -990,7 +994,7 @@
     background: url("https://www.toptal.com/designers/subtlepatterns/patterns/dust_scratches.png");
 
 		> section {
-			border-top: solid 2px _palette(border);
+      border-top: solid 2px _palette(border2-bg);
 			margin: $size-header-pad 0 0 0;
       padding: $size-header-pad 0 0 0;
       

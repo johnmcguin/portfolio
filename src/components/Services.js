@@ -13,10 +13,11 @@ class Services extends Component {
             <div>
                 <h2>Services</h2>
                 <p>
-                    I'd like to help move your business goals from idea to reality. I will be
-                    honest and upfront and committed to finding solutions to your business needs.
+                    I'd like to help move your business goals from idea to reality. Don't see the service 
+                    you're looking for? Reach out and start the conversation anyway. I will be
+                    honest, upfront, and committed to finding solutions to your business needs.
                 </p>
-                <ul style={listStyle}>
+                <ul className="is-light" style={listStyle}>
                     {this.props.services.map((svc, idx) => <Service key={idx} service={svc}></Service>)}
                 </ul>
             </div>
