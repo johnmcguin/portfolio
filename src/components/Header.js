@@ -9,8 +9,8 @@ class Header extends React.Component {
             <header id="header">
                 <div className="inner">
                     <div className="profile" style={{backgroundImage: "url(" + avatar + ")"}}></div>
-                    <h1>Hello, I am John McGuin</h1>
-                    <p>Web developer based in Denver, Colorado</p>
+                    <h1>John McGuin</h1>
+                    <p>Full Stack web developer based in Denver, Colorado</p>
                 </div>
                 <Footer />
             </header>
